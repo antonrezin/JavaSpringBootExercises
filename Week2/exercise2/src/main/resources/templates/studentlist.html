@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Server Programming</title>
+    <meta
+      http-equiv="Content-Type"
+      content="text/html;
+charset=UTF-8"
+    />
+  </head>
+
+  <body>
+    <h1 th:text="${welcomeMessage}"></h1>
+    <div th:each="student : ${students}">
+      <h1>
+        <span th:text="${student.firstName}"></span>
+        <span th:text="${student.lastName}"></span>
+      </h1>
+    </div>
+  </body>
+</html>
